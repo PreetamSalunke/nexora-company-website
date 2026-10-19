@@ -1,0 +1,259 @@
+
+/* ==================================
+   ABOUT PAGE HERO
+================================== */
+
+.about-hero {
+  background: linear-gradient(135deg, #101d3a, #203d65);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about-tag {
+  display: inline-block;
+  color: #008da3;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+.about-hero .about-tag {
+  color: #5ee3f0;
+}
+
+.about-hero h1 {
+  font-size: clamp(34px, 5vw, 52px);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.about-hero p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #dbeafe;
+  font-size: 17px;
+}
+
+/* ==================================
+   COMPANY STORY
+================================== */
+
+.company-story {
+  padding: 90px 0;
+}
+
+.story-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.story-content h2 {
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.3;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+
+.story-content p {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.story-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.story-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 65px 35px;
+  text-align: center;
+  background: #edf7fb;
+  border: 1px solid #d9eaf1;
+  border-radius: 20px;
+}
+
+.story-symbol {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.story-card h3 {
+  color: var(--primary);
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.story-card p {
+  color: var(--muted);
+}
+
+/* ==================================
+   MISSION AND VISION
+================================== */
+
+.mission-vision {
+  background: var(--light);
+  padding: 90px 0;
+}
+
+.about-section-heading {
+  max-width: 650px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.about-section-heading h2 {
+  color: var(--primary);
+  font-size: clamp(28px, 3vw, 40px);
+  margin-bottom: 14px;
+}
+
+.about-section-heading p {
+  color: var(--muted);
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.mission-card {
+  background: white;
+  padding: 42px 35px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.mission-icon {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.mission-card h3 {
+  color: var(--primary);
+  font-size: 23px;
+  margin-bottom: 14px;
+}
+
+.mission-card p {
+  color: var(--muted);
+}
+
+/* ==================================
+   TEAM SECTION
+================================== */
+
+.team-section {
+  padding: 90px 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.team-card {
+  background: #edf7fb;
+  padding: 40px 25px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #d9eaf1;
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+.team-avatar {
+  font-size: 58px;
+  margin-bottom: 20px;
+}
+
+.team-card h3 {
+  color: var(--primary);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.team-card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ==================================
+   ABOUT CTA
+================================== */
+
+.about-cta {
+  background: #edf7fb;
+  padding: 75px 0;
+  text-align: center;
+}
+
+.about-cta h2 {
+  color: var(--primary);
+  font-size: clamp(27px, 3vw, 38px);
+  margin-bottom: 15px;
+}
+
+.about-cta p {
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+/* ==================================
+   TABLET RESPONSIVE
+================================== */
+
+@media (max-width: 992px) {
+  .story-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==================================
+   MOBILE RESPONSIVE
+================================== */
+
+@media (max-width: 600px) {
+  .about-hero {
+    padding: 70px 0;
+  }
+
+  .company-story,
+  .mission-vision,
+  .team-section {
+    padding: 60px 0;
+  }
+
+  .mission-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-card {
+    padding: 30px 25px;
+  }
+
+  .story-card {
+    padding: 45px 25px;
+  }
+
+  .about-cta {
+    padding: 60px 0;
+  }
+}

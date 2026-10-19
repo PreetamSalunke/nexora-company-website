@@ -1,0 +1,244 @@
+
+/* ==================================
+   CONTACT PAGE HERO
+================================== */
+
+.contact-hero {
+  background: linear-gradient(135deg, #101d3a, #203d65);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact-tag {
+  display: inline-block;
+  color: #008da3;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+.contact-hero .contact-tag {
+  color: #5ee3f0;
+}
+
+.contact-hero h1 {
+  font-size: clamp(34px, 5vw, 52px);
+  margin-bottom: 20px;
+}
+
+.contact-hero p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #dbeafe;
+  font-size: 17px;
+}
+
+/* ==================================
+   CONTACT CONTENT
+================================== */
+
+.contact-section {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+/* Contact Information */
+
+.contact-info h2 {
+  color: var(--primary);
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.contact-intro {
+  color: var(--muted);
+  margin-bottom: 35px;
+}
+
+.contact-info-card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.contact-info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  background: #d9f6fa;
+  border-radius: 12px;
+  font-size: 23px;
+}
+
+.contact-info-card h3 {
+  color: var(--primary);
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.contact-info-card p,
+.contact-info-card a {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.contact-info-card a:hover {
+  color: #008da3;
+}
+
+/* ==================================
+   CONTACT FORM
+================================== */
+
+.contact-form-wrapper {
+  background: var(--light);
+  padding: 40px;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+}
+
+.contact-form-wrapper h2 {
+  color: var(--primary);
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.contact-form-wrapper > p {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #008da3;
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.12);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form-group input.invalid,
+.form-group textarea.invalid {
+  border-color: #dc2626;
+}
+
+.error-message {
+  display: block;
+  color: #dc2626;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.contact-submit {
+  width: 100%;
+}
+
+.form-status {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-status.success {
+  color: #15803d;
+}
+
+.form-status.error {
+  color: #dc2626;
+}
+
+/* ==================================
+   BOTTOM CTA
+================================== */
+
+.contact-bottom {
+  background: #edf7fb;
+  padding: 75px 0;
+  text-align: center;
+}
+
+.contact-bottom h2 {
+  color: var(--primary);
+  font-size: clamp(27px, 3vw, 38px);
+  margin-bottom: 15px;
+}
+
+.contact-bottom p {
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+/* ==================================
+   TABLET RESPONSIVE
+================================== */
+
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+}
+
+/* ==================================
+   MOBILE RESPONSIVE
+================================== */
+
+@media (max-width: 600px) {
+  .contact-hero {
+    padding: 70px 0;
+  }
+
+  .contact-section {
+    padding: 60px 0;
+  }
+
+  .contact-form-wrapper {
+    padding: 25px 20px;
+  }
+
+  .contact-bottom {
+    padding: 60px 0;
+  }
+}
